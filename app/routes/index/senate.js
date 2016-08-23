@@ -9,7 +9,7 @@ export default Ember.Route.extend({
   },
   actions: {
     showSubs(params) {
-      this.transitionTo('senate-sub', params.committee_id);
+      this.transitionTo('senate-sub', params.committee_id, params.commitee_name);
     }
   }
 });
