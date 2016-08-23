@@ -1,0 +1,13 @@
+{{#if showList}}
+  <h3>House Committees</h3>
+  <button class="btn btn-xs btn-default" {{action 'hideHouseList'}}>Hide House Committees</button>
+  <ul>
+    {{#each model as |committee|}}
+    <li>{{committee.name}}</li>
+    <hr>
+    {{/each}}
+  </ul>
+{{else}}
+  <h3>House Committees</h3>
+  <button id="nav-button" class="btn btn-xs btn-default"{{action 'updateShowList'}}>Show House Committees</button>
+{{/if}}
