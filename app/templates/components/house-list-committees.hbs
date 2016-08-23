@@ -3,7 +3,7 @@
   <button class="btn btn-xs btn-default" {{action 'hideHouseList'}}>Hide House Committees</button>
   <ul>
     {{#each model as |committee|}}
-    <li>{{committee.name}}</li>
+    <li>{{#link-to 'subcommittees' committee.committee_id}}{{committee.name}}{{/link-to}}</li>
     <hr>
     {{/each}}
   </ul>

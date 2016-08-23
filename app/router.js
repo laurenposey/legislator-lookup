@@ -10,8 +10,9 @@ Router.map(function() {
   this.route('results', {path: '/results/:zip'});
   // this.route('index', {path: '/'});
   this.route('index', {path: '/'}, function() {
-    this.route('senate', {path: '/senate'});
+    this.route('senate', {path: '/'});
   });
+  this.route('subcommittees', {path: '/subcommittees/:committee_id'});
 });
 
 export default Router;
