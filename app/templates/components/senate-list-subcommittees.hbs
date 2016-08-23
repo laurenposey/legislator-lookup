@@ -1,1 +1,12 @@
-{{yield}}
+<h3>Subcommittees</h3>
+<h3>{{model.name}}</h3>
+
+{{#if hasSubcommittees}}
+<ul>
+  {{#each subs as |sub|}}
+    <li>{{sub.name}}</li>
+  {{/each}}
+</ul>
+{{else}}
+  <h4>This committee has no subcommittees</h4>
+{{/if}}
