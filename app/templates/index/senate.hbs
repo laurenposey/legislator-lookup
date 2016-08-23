@@ -1,0 +1,13 @@
+{{#if senateList}}
+  <h3>Senate Committees</h3>
+  <button class="btn btn-xs btn-default" {{action 'hideSenateList'}}>Hide Senate Committees</button>
+  <ul>
+    {{#each model as |committee|}}
+    <li>{{committee.name}}</li>
+    <hr>
+    {{/each}}
+  </ul>
+{{else}}
+  <h3>Senate Committees</h3>
+  <button id="nav-button" class="btn btn-xs btn-default" {{action 'showSenateList'}}>Show Senate Committees</button>
+{{/if}}
