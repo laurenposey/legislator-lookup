@@ -1,4 +1,4 @@
-# _EPICODUS INDEPENDENT PROJECT | Legislator Lookup_
+# _EPICODUS | Legislator Lookup_
 
 #### _Legislator Lookup, August 2016_
 
